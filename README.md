@@ -16,12 +16,12 @@ We will be combining three datasets from different sources:
 
 ### Wikipedia Article Data
 
-This English-language Wikipedia article data is from the "Category:Politicians by nationality" and subcategories. The Wikipedia dataset can be found on [Figshare](https://figshare.com/articles/Untitled_Item/5513449). The article data was extracted via the Wikimedia API and saved as a CSV file named `page_data.csv`. The page_data.csv file is also available in this repository.  
+This English-language Wikipedia article data is from the "Category:Politicians by nationality" and subcategories. The Wikipedia dataset can be found on [Figshare](https://figshare.com/articles/Untitled_Item/5513449). The article data was extracted via the Wikimedia API and saved as a CSV file named `page_data.csv`. A copy of the page_data.csv file is available in this repository.  
   
 The columns in the page_data.csv file are:  
- 1. "country", containing the sanitised country name, extracted from the category name;
- 2. "page", containing the unsanitised page title.
- 3. "last_edit", containing the edit ID of the last edit to the page. 
+ 1. country - country name, extracted from the category name  
+ 2. page - Wikipedia page title  
+ 3. last_edit - edit ID of the last edit to the page, also called revision_id 
  
  __Wikipedia Data License__
  
@@ -34,6 +34,13 @@ The country population data comes from the Population Research Bureau's (PRB) 20
 ![alt text](https://raw.githubusercontent.com/orbitse/data-512-a2/master/population_data.jpeg)  
   
 However, that same population data is available in this repository in the CSV file, `Population Mid-2015.csv`.  
+
+The columns in the Population Mid-2015.csv file are:
+  1. Location	- country name   
+  2. Location Type	- Country   
+  3. TimeFrame	- Mid-2015  
+  4. Data Type	- Number  
+  5. Data - population value with commas  
 
 __Population Data License__  
 
@@ -59,23 +66,23 @@ When you query the API, you will notice that ORES returns a prediction value tha
 
 `# Example of the JSON format of response from the ORES API`  
 `{"enwiki": {`  
-`       ``"models": {`  
-`               ``"wp10": {`  
-`                     ``"version": "0.5.0"}`  
+`"models": {`  
+`"wp10": {`  
+`"version": "0.5.0"}`  
 `                 },`  
 `        "scores": {`  
 `                "774499188": {`  
 `                           "wp10": {`  
 `                                 "score": {`  
 `                                       "prediction": "Stub",`  
-`                                                  ``"probability": {`
-`                                                               ``"B": 0.03488477079112925,`
-`                                                               ``"C": 0.06953258948284814,`
-`                                                               ``"FA": 0.0025762575670963965,`
-`                                                               ``"GA": 0.007911851615317388,`  
-`                                                               ``"Start": 0.4106575723489943,`  
-`                                                               ``"Stub": 0.4744369581946146`
-`                                                                 ``}  `
+`                                                  "probability": {`  
+`                                                     "B": 0.03488477079112925,  `  
+`                                                     "C": 0.06953258948284814,  `  
+`                                                     "FA": 0.0025762575670963965,  `  
+`                                                     "GA": 0.007911851615317388,  `    
+`                                                     "Start": 0.4106575723489943,  `  
+`                                                     "Stub": 0.4744369581946146  `  
+`                                                      ``}  `
 `                                         `` }  `  
 `                                 `` }  `  
 `                            `` }  `  
@@ -91,7 +98,7 @@ The Wikipedia data and the code used to generate that data are released under th
 
 This project uses the open-source web application Jupyter Notebook. To download Jupyter Notebook, see [here](https://jupyter.org/install.html).
 
-The code in the Jupyter Notebook project file, `hcds-a2-data-curation.ipynb`, is written in Python 3. You also need to have Python installed in order to run the Jupyter Notebook application. To download a version of Python 3, like Python 3.6, see [Download](https://www.python.org/downloads/).  
+The code in the Jupyter Notebook project file, `hcds-a2-data-curation.ipynb`, is written in Python 3. You also need to have Python installed in order to run the Jupyter Notebook application. To download a version of Python 3, like Python 3.6, see [Download](https://www.python.org/downloads/) and [Beginner's Guide](https://wiki.python.org/moin/BeginnersGuide).  
 
 Alternatively, you can download a version of Python 3 by downloading Anaconda ([Download](https://www.anaconda.com/download/), [Documentation](https://docs.anaconda.com/anaconda/)).
 
