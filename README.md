@@ -74,3 +74,8 @@ When you query the API, you will notice that ORES returns a prediction value tha
             }
         }
 }`
+
+![alt text](https://raw.githubusercontent.com/orbitse/data-512-a2/master/WikipediaBiasDataPlot.png)  
+This visualization of the Wikipedia page view data was created with matplotlib.  
+See the Jupyter Notebook file, hcds-a2-data-curation.ipynb, for the instructions on andhow to create this visualization.
+
