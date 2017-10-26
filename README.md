@@ -1,11 +1,9 @@
 # data-512-a2: Bias in Wikipedia Article Data
 
 ## Purpose of Project
-The goal of this assignment is to explore the concept of 'bias' through data on Wikipedia articles - specifically, articles on political figures from a variety of countries.  
+The goal of this project is to explore the concept of 'bias' through data by analyzing Wikipedia articles on political figures from a variety of countries. The data will include a dataset of Wikipedia articles, a dataset of country populations, and predicted article quality data from a machine learning service called __ORES__.  
 
-You will combine a dataset of Wikipedia articles with a dataset of country populations, and use a machine learning service called __ORES__ to estimate the quality of each article.  
-
-This project includes an analysis of how the coverage of politicians on Wikipedia and the quality of articles about politicians varies between countries. The analysis will consist of a series of visualizations that show:  
+This analysis will quantify the number of Wikipedia pages devoted to politicians, the quality of those articles about politicians, and consider how those measurements vary between countries. The analysis will include a series of visualizations that show:  
  1.	The countries with the greatest and least coverage of politicians on Wikipedia compared to their population. 
  2.	The countries with the highest and lowest proportion of high quality articles about politicians. 
  
@@ -31,14 +29,15 @@ The Wikipedia data and the code used to generate that data are released under th
  
 ### Country Population Data 
 
-The country population data comes from the Population Research Bureau [website](http://www.prb.org/DataFinder/Topic/Rankings.aspx?ind=14). If you would like to download the population data, click the Excel icon in the upper right corner, as shown in this screenshot.  
+The country population data comes from the Population Research Bureau's (PRB) 2015 World Population Data Sheet, available on this [PRB Data website](http://www.prb.org/DataFinder/Topic/Rankings.aspx?ind=14). If you would like to download the population data, follow the link and click the Excel icon on the right side, as shown in the screenshot below.  
   
 ![alt text](https://raw.githubusercontent.com/orbitse/data-512-a2/master/population_data.jpeg)  
   
-However, the same population data is available in this repository in the CSV file, `Population Mid-2015.csv`.  
+However, that same population data is available in this repository in the CSV file, `Population Mid-2015.csv`.  
 
 __Population Data License__  
 
+It's not clear if the population data is released subject to a license. However, the PRB's annual report states that it is "committed to making all of its products and resources publicly available by disseminating them widely through both print and digital channels, and in innovative formats." [See report](http://www.prb.org/About/Annual-Report.aspx)
 
 ### Article Quality Prediction Data 
 
@@ -52,7 +51,7 @@ The range of quality scores are, from best to worst:
   5.	Start - Start-class article
   6.	Stub - Stub-class article  
 
-These quality scores are a sub-set of quality assessment categories developed by Wikipedia editors. For more information about the scores, see [here](https://en.wikipedia.org/wiki/Wikipedia:WikiProject_assessment#Grades).  
+These quality scores are a sub-set of quality assessment categories developed by Wikipedia editors. For more information about the scores, see [Project Assessment](https://en.wikipedia.org/wiki/Wikipedia:WikiProject_assessment#Grades).  
 
 The ORES API documentation can be found [here](https://www.mediawiki.org/wiki/ORES) and the web API is [here](https://ores.wikimedia.org/v3/). The API requires a revision ID, which is the third column in the Wikipedia dataset ("last_edit"), and a model, which is "wp10". 
 
@@ -60,31 +59,41 @@ When you query the API, you will notice that ORES returns a prediction value tha
 
 `# Example of the JSON format of response from the ORES API`  
 `{"enwiki": {`  
-`        "models": {`  
-`                "wp10": {`  
-`                       "version": "0.5.0"}`  
+`       ``"models": {`  
+`               ``"wp10": {`  
+`                     ``"version": "0.5.0"}`  
 `                 },`  
 `        "scores": {`  
 `                "774499188": {`  
 `                           "wp10": {`  
 `                                 "score": {`  
 `                                       "prediction": "Stub",`  
-                                        `"probability": {`
-                                                   `"B": 0.03488477079112925,`
-                                                   `"C": 0.06953258948284814,`
-                                `"FA": 0.0025762575670963965,`
-                                `"GA": 0.007911851615317388,`  
-                                `"Start": 0.4106575723489943,`  
-                                `"Stub": 0.4744369581946146`
- `                               }  `
-                            }
-                    }
-                }
-`            }  `  
+`                                                  ``"probability": {`
+`                                                               ``"B": 0.03488477079112925,`
+`                                                               ``"C": 0.06953258948284814,`
+`                                                               ``"FA": 0.0025762575670963965,`
+`                                                               ``"GA": 0.007911851615317388,`  
+`                                                               ``"Start": 0.4106575723489943,`  
+`                                                               ``"Stub": 0.4744369581946146`
+`                                                                 ``}  `
+`                                         `` }  `  
+`                                 `` }  `  
+`                            `` }  `  
+`                   ``}  `  
 `        }  `  
 `}`  
 
-__Article Quality Prediction Data__  
+__Article Quality Prediction Data License__  
+
+The Wikipedia data and the code used to generate that data are released under the CC-BY-SA 4.0 license.  
+
+## Tools Used in Project
+
+This project uses the open-source web application Jupyter Notebook. To download Jupyter Notebook, see [here](https://jupyter.org/install.html).
+
+The code in the Jupyter Notebook project file, `hcds-a2-data-curation.ipynb`, is written in Python 3. You also need to have Python installed in order to run the Jupyter Notebook application. To download a version of Python 3, like Python 3.6, see [Download](https://www.python.org/downloads/).  
+
+Alternatively, you can download a version of Python 3 by downloading Anaconda ([Download](https://www.anaconda.com/download/), [Documentation](https://docs.anaconda.com/anaconda/)).
 
 ## Visualization 
 
