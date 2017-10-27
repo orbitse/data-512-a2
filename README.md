@@ -54,7 +54,7 @@ The use of Wikipedia data is subject to the Wikimedia Foundation terms of use, a
 
 The population data for 210 countries comes from the Population Research Bureau's (PRB) 2015 World Population Data Sheet, available on this [PRB Data website](http://www.prb.org/DataFinder/Topic/Rankings.aspx?ind=14). If you would like to download the population data, follow the link and click the Excel icon on the right side, as shown in the screenshot below.  
   
-![Population Data](https://raw.githubusercontent.com/orbitse/data-512-a2/master/population_data.jpeg)  
+![Population Data](https://raw.githubusercontent.com/orbitse/data-512-a2/master/image_population_data.jpeg)  
   
 However, that same population dataset is also available in this repository, [Population Mid-2015.csv](https://raw.githubusercontent.com/orbitse/data-512-a2/master/Population%20Mid-2015.csv).  
 
@@ -69,7 +69,7 @@ __Population Data License__
 
 It's not clear if the population data is subject to a license.  
 
-However, the stated mission of the PRB is to provide access to data. "The Population Reference Bureau informs people around the world about population, health, and the environment, and empowers them to use that information to advance the well-being of current and future generations." [PRB's About Page](http://www.prb.org/About.aspx) (as of Oct. 27, 2017) Additionally, the PRB's annual report states that it is "committed to making all of its products and resources publicly available by disseminating them widely through both print and digital channels, and in innovative formats." [See report](http://www.prb.org/About/Annual-Report.aspx)  
+However, the stated mission of the PRB is to provide access to data. "The Population Reference Bureau informs people around the world about population, health, and the environment, and empowers them to use that information to advance the well-being of current and future generations." [PRB's About Page](http://www.prb.org/About.aspx) Additionally, the PRB's annual report states that it is "committed to making all of its products and resources publicly available by disseminating them widely through both print and digital channels, and in innovative formats." [See report](http://www.prb.org/About/Annual-Report.aspx)  
 
 ### Article Quality Prediction Data 
 
