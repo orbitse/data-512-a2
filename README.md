@@ -12,7 +12,7 @@ The analysis will include a series of visualizations that show:
  1. The countries with the greatest and least coverage of politicians on Wikipedia on a per capita basis.  
  2. The countries with the highest and lowest proportion of high quality articles about politicians. 
 
-This README file and the Jupyter Notebook file, `hcds-a2-data-curation.ipynb`, contain the information needed to reproduce this project's analysis, including a description of the data and all relevant resources and documentation, with hyperlinks to those resources.  
+This README file and the Jupyter Notebook file, `hcds-a2-bias.ipynb`, contain the information needed to reproduce this project's analysis, including a description of the data and all relevant resources and documentation, with hyperlinks to those resources.  
 
 ## Data Used in Project
 
@@ -98,23 +98,23 @@ This is an example of a response in the JSON format from the ORES API:
  >>              },   
  >>       "scores": {    
   >>>               "774499188": {   
-   >>>>                        "wp10": {    
-    >>>>>                             "score": {    
-    >>>>>                                   "prediction": "Stub",   
-    >>>>>>                                             "probability": {      
-    >>>>>>>                                                   "B": 0.03488477079112925,    
-    >>>>>>>>                                                  "C": 0.06953258948284814,    
-    >>>>>>>>                                                  "FA": 0.0025762575670963965,    
-    >>>>>>>>                                                  "GA": 0.007911851615317388,     
-    >>>>>>>>                                                  "Start": 0.4106575723489943,     
-    >>>>>>>>                                                  "Stub": 0.4744369581946146     
-    >>>>>>>                                                           }  
-    >>>>>>                                       }  
+  >>>>                        "wp10": {    
+  >>>>>                             "score": {    
+  >>>>>                                   "prediction": "Stub",   
+   >>>>>>                                             "probability": {      
+     >>>>>>>                                                  "B": 0.03488477079112925,    
+     >>>>>>>>                                                  "C": 0.06953258948284814,    
+     >>>>>>>>                                                  "FA": 0.0025762575670963965,    
+     >>>>>>>>                                                  "GA": 0.007911851615317388,     
+     >>>>>>>>                                                  "Start": 0.4106575723489943,   
+     >>>>>>>>                                                  "Stub": 0.4744369581946146     
+     >>>>>>>                                                           }  
+     >>>>>>                                    }  
     >>>>>                                }     
-   >>>>                           }      
-  >>>                  }    
- >>        }    
-> }  
+   >>>>                            }      
+  >>>                   }    
+ >>              }    
+>   }  
 
 __Article Quality Prediction Data License__  
 
@@ -124,11 +124,11 @@ The Wikipedia data, and the code used to generate that data, are released under 
 
 This project uses the open-source web application Jupyter Notebook. To download Jupyter Notebook, see [Installation](https://jupyter.org/install.html) and for more information, see [Documentation](https://jupyter.org/documentation.html). 
 
-The code in the Jupyter Notebook project file, `hcds-a2-data-curation.ipynb`, is written in Python 3. You also need to have Python installed in order to run the Jupyter Notebook application. To download a version of Python 3, like Python 3.6, see [Download](https://www.python.org/downloads/) and [Beginner's Guide](https://wiki.python.org/moin/BeginnersGuide).  
+The code in the Jupyter Notebook project file, `hcds-a2-bias.ipynb`, is written in Python 3. You also need to have Python installed in order to run the Jupyter Notebook application. To download a version of Python 3, like Python 3.6, see [Download](https://www.python.org/downloads/) and [Beginner's Guide](https://wiki.python.org/moin/BeginnersGuide).  
 
 Alternatively, you can download a version of Python 3 by downloading Anaconda ([Download](https://www.anaconda.com/download/), [Documentation](https://docs.anaconda.com/anaconda/)).
 
-In addition to Python 3.X, the following Python libraries are needed to run the code in `hcds-a2-data-curation.ipynb`.  
+In addition to Python 3.X, the following Python libraries are needed to run the code in `hcds-a2-bias.ipynb`.  
   - [Matplotlib](https://matplotlib.org) : will be used for data visualization
   - [Pandas](http://pandas.pydata.org) : will be used for data processing
   - [Seaborn](http://seaborn.pydata.org) -- Note: this library is only for style purposes and is not essential
@@ -138,7 +138,7 @@ In addition to Python 3.X, the following Python libraries are needed to run the 
   
   Additionally, if you have any version of Python 3.X installed, you should already have the csv, json,  
   and requests libraries installed. These dependency libraries will be used to get and save data in the notebook  
-  file, `hcds-a2-data-curation.ipynb`. 
+  file, `hcds-a2-bias.ipynb`. 
 
 ## Data Visualization  
 
@@ -146,7 +146,7 @@ This visualization of the combined datasets was created with matplotlib.
 
 ![Wikipedia Data Plot](https://raw.githubusercontent.com/orbitse/data-512-a2/master/WikipediaBiasDataPlot.png)  
 
- See the Jupyter Notebook file, `hcds-a2-data-curation.ipynb`, in this repository for the code to create this visualization. 
+ See the Jupyter Notebook file, `hcds-a2-bias.ipynb`, in this repository for the code to create this visualization. 
 
 ## Writeup 
 
