@@ -66,14 +66,14 @@ The population data for 210 countries comes from the Population Research Bureau'
   
 ![Population Data](https://raw.githubusercontent.com/orbitse/data-512-a2/master/image_population_data.jpeg)  
   
-However, that same population dataset is also available in this repository, [Population Mid-2015.csv](https://raw.githubusercontent.com/orbitse/data-512-a2/master/Population%20Mid-2015.csv).  
+However, that same population dataset is also available in this repository, [population_mid-2015.csv](https://raw.githubusercontent.com/orbitse/data-512-a2/master/Population%20Mid-2015.csv).  
 
 The columns in the Population Mid-2015.csv file:
-  1. Location	- the country name   
-  2. Location Type	- Country   
-  3. TimeFrame	- Mid-2015  
-  4. Data Type	- Number  
-  5. Data - the population value encoded as a number with commas  
+  1. Location: the country name   
+  2. Location Type: "Country"   
+  3. TimeFrame: "Mid-2015"  
+  4. Data Type: "Number"  
+  5. Data: the population value encoded as a number with commas  
 
 __Population Data License__  
 
@@ -110,18 +110,18 @@ This is an example of a response in the JSON format from the ORES API:
   >>>               "774499188": {   
   >>>>                        "wp10": {    
   >>>>>                             "score": {    
-  >>>>>                                   "prediction": "Stub",   
-   >>>>>>                                             "probability": {      
-    >>>>>>                                                  "B": 0.03488477079112925,    
-    >>>>>>                                                  "C": 0.06953258948284814,    
-    >>>>>>                                                  "FA": 0.0025762575670963965,    
-    >>>>>>                                                  "GA": 0.007911851615317388,     
-    >>>>>>                                                  "Start": 0.4106575723489943,   
-    >>>>>>                                                  "Stub": 0.4744369581946146     
+   >>>>>>                                   "prediction": "Stub",   
+    >>>>>>>                                             "probability": {      
+     >>>>>>>>                                                  "B": 0.03488477079112925,    
+     >>>>>>>>                                                  "C": 0.06953258948284814,    
+     >>>>>>>>                                                  "FA": 0.0025762575670963965,    
+     >>>>>>>>                                                  "GA": 0.007911851615317388,     
+     >>>>>>>>                                                  "Start": 0.4106575723489943,   
+     >>>>>>>>                                                  "Stub": 0.4744369581946146     
     >>>>>>                                                           }  
-    >>>>>                                    }  
-   >>>>                                }     
-  >>>                            }      
+    >>>>>>                                    }  
+   >>>>>                                }     
+   >>>>                            }      
   >>>                   }    
  >>              }    
 >   }  
