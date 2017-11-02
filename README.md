@@ -1,5 +1,7 @@
 # data-512-a2: Bias in Wikipedia Article Data
 
+This project was produced for DATA 512 at the University of Washington by Erin Orbits in October 2017.  
+
 ## Purpose of this Project  
 
 The goal of this project is to explore the concept of 'bias' in data by analyzing Wikipedia articles (or pages) on political figures from different countries.  
