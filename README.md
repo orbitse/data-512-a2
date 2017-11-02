@@ -216,7 +216,7 @@ __Country with the Lowest Proportion of Quality Articles ( > 0 )__: Finland (0.1
 
 __Countries with No High Quality Articles__: 'Andorra', 'Antigua and Barbuda', 'Bahamas', 'Bahrain', 'Barbados', 'Belgium', 'Belize', 'Burundi', 'Cape Verde', 'Comoros', 'Djibouti', 'Dominica', 'Eritrea', 'Federated States of Micronesia', 'French Guiana', 'Guadeloupe', 'Guyana', 'Honduras', 'Kazakhstan', 'Kiribati', 'Lesotho', 'Liechtenstein', 'Macedonia', 'Marshall Islands', 'Monaco', 'Mozambique', 'Nauru', 'Nepal', 'San Marino', 'Sao Tome and Principe', 'Seychelles', 'Solomon Islands', 'Suriname', 'Swaziland', 'Switzerland', 'Tajikistan', 'Timor-Leste', 'Tonga', 'Tunisia', 'Turkmenistan', 'Zambia'
 
-__5 Countries with Highest Number of Articles__:
+__5 Countries with Highest Number of Articles__:  
      > France	    1689  (population 64,346,720);  
      > Australia     1566;  
      > China	     1138  (population 1,371,920,000);  
