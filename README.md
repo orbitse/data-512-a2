@@ -31,7 +31,31 @@ Figshare is an open repository where users can make their research and data avai
 
 A copy of the Wikipedia article dataset is also available in this `data-512-a2` repository: [page_data.csv](https://raw.githubusercontent.com/orbitse/data-512-a2/master/page_data.csv).  
 
-This English-language Wikipedia article data about politicians came from the "Category: Politicians by nationality" and corresponding subcategories. The article data was extracted using the Wikimedia API, saved as a CSV file named `page_data.csv`, and uploaded to Figshare. 
+This English-language Wikipedia article data about politicians came from the "Category: Politicians by nationality" and corresponding subcategories. These are some of the subcategories:  
+Politicians by nationality‎ (243 C)  
+► Assassinated politicians by nationality‎ (129 C)  
+► Political candidates by nationality‎ (15 C)  
+► Politicians by ethnic or national descent‎ (12 C)  
+► Politicians by former country‎ (18 C)  
+► Politicians by nationality and city‎ (15 C)  
+► Politicians by nationality and party‎ (232 C)  
+► Politicians convicted of crimes by nationality‎ (72 C)  
+► Politicians by nationality and century‎ (45 C)  
+► Leaders of political parties by country‎ (39 C)  
+► Politicians by century and nationality‎ (4 C)  
+► Politicians from dependent territories‎ (9 C)  
+► Women in politics by nationality‎ (234 C)  
+► LGBT politicians by nationality‎ (41 C)  
+► Sportsperson-politicians by nationality‎ (62 C)  
+► Politicians of African nations‎ (65 C)  
+► Politicians of Asian nations‎ (49 C, 1 P)  
+► Politicians of Caribbean nations‎ (28 C)  
+► Politicians of European nations‎ (62 C)  
+► Politicians of North American nations‎ (10 C)  
+► Politicians of Oceanian nations‎ (31 C)  
+► Politicians of South American nations‎ (16 C)  
+
+The article data was extracted using the Wikimedia API, saved as a CSV file named `page_data.csv`, and uploaded to Figshare. 
 
 __Note:__ The process of extracting the article data is limited since the "recursion only went 2 levels deep into the category tree." _Politicians by Country from the English-language Wikipedia_, Figshare. For example, among the articles devoted to Antiguan politicians, someone exclusively listed as an Antiguan politician is included in the dataset, but a politician who was assassinated is not. _Id._
   
@@ -163,4 +187,42 @@ This visualization of the combined datasets was created with Matplotlib.
 
 ## Writeup 
 
-Write a few paragraphs reflecting on what you have learned, what you found, what (if anything) surprised you about your findings, and/or what theories you have about why any biases might exist (if you find they exist). You can also include any questions this assignment raised for you about bias, Wikipedia, or machine learning. 
+### About the Data
+
+ First and foremost, this English-language Wikipedia article data was generated from the "Category: Politicians by nationality" and one subcategory. So, the editors who created these articles had to categorize the subjects of these articles as "politicians" and decide on the subjects' "nationality."   
+
+ The [Merriam-Webster Dictionary](https://www.merriam-webster.com/dictionary/politician) defines a politician as "a person experienced in the art or science of government," or "a person engaged in party politics as a profession," or "often disparaging: a person primarily interested in political office for selfish or other narrow usually short-sighted reasons."  
+
+ Especially, since the term "politician" can be considered disparaging, it's possible that editors would be reluctant to label their articles as politicians. For example, out of the 33 most well-known U.S. presidents, only four have articles in our dataset, and one of those is John F. Kennedy, who's country is listed as "Ireland." Additionally, these modern politicans are not included in our dataset:  
+ - "Ronald Reagan",  
+ - "George H. W. Bush",  
+ - "Bill Clinton",  
+ - "Hillary Rodham Clinton",  
+ - "George W. Bush",  
+ - "Barack Obama",  
+ - "Donald Trump",  
+ - "Bernie Sanders", or  
+ - "Sarah Palin".  
+
+### Findings
+
+__Country with the Highest Proportion of Per Capita Articles__: Nauru (0.4880 %)  
+
+__Country with the Lowest Proportion of Per Capita Articles ( > 0 )__: Bangladesh (0.0002 %)
+
+__Country with the Highest Proportion of Quality Articles__: North Korea (23.08 %)  
+
+__Country with the Lowest Proportion of Quality Articles ( > 0 )__: Finland (0.17 %)  
+
+__Countries with No High Quality Articles__: 'Andorra', 'Antigua and Barbuda', 'Bahamas', 'Bahrain', 'Barbados', 'Belgium', 'Belize', 'Burundi', 'Cape Verde', 'Comoros', 'Djibouti', 'Dominica', 'Eritrea', 'Federated States of Micronesia', 'French Guiana', 'Guadeloupe', 'Guyana', 'Honduras', 'Kazakhstan', 'Kiribati', 'Lesotho', 'Liechtenstein', 'Macedonia', 'Marshall Islands', 'Monaco', 'Mozambique', 'Nauru', 'Nepal', 'San Marino', 'Sao Tome and Principe', 'Seychelles', 'Solomon Islands', 'Suriname', 'Swaziland', 'Switzerland', 'Tajikistan', 'Timor-Leste', 'Tonga', 'Tunisia', 'Turkmenistan', 'Zambia'
+
+__5 Countries with Highest Number of Articles__:
+     > France	    1689  (population 64,346,720);  
+     > Australia     1566;  
+     > China	     1138  (population 1,371,920,000);  
+     > United States 1098;  
+     > Mexico	    1081   
+
+### Conclusions
+
+ Initially, it was surprising that North Korea had the highest proportion of high quality articles, but given the number of missing articles in this dataset, I'm not sure I can conclude anything. The classification system for Wikipedia articles seems somewhat arbitrary. Before drawing any conclusions about bias, I would like to include data from other categories, perhaps the subcategories of Category:Lists of political office-holders by country. 
